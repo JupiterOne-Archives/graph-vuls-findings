@@ -1,5 +1,5 @@
 {
-  "name": "jupiter-vuls-ingest",
+  "name": "graph-vuls-findings",
   "version": "1.0.0",
   "description": "",
   "main": "j1-ingest.js",
