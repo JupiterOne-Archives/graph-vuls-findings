@@ -29,9 +29,9 @@ async function ingestData(data) {
       dev: (config.dev === 'true') 
     }).init();
 
-  const newEntities = await toFindingEntities(data);
+  const newEntities = toFindingEntities(data);
 
-  createEntities(j1Client, newEntities);
+  await createEntities(j1Client, newEntities);
 }
 
 

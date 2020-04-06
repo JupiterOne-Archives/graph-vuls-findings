@@ -1,7 +1,7 @@
 # graph-vuls-findings
 
 This is a local/unmanaged integration that scans vulnerability reports from
-[Vuls.io](https://vuls.io) scans and ingests the findings into JupiterOne.
+[Vuls.io](https://vuls.io) scans and ingests the findings into JupiterOne (J1).
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ how to deploy the project on a live system.
 
 ### Installing
 
-Export the following environment variables:
+Export the following environment variables (or store locally in a `.env` file):
 
 ```bash
 export J1_ACCESS_TOKEN=<api_key>
@@ -26,7 +26,8 @@ export J1_ACCOUNT=<account_id>
 ```
 
 `J1_ACCOUNT` should be your JupiterOne `accountId`, which can be found by
-running the query `Find Account` in the JupiterOne console.
+running the query `Find Account as a return a.accountId` in the JupiterOne web
+console.
 
 `J1_ACCESS_TOKEN` is a JupiterOne API key, which can be created in the
 JupiterOne console by going to the gear icon in the top-right, then clicking
